@@ -13,7 +13,7 @@ int main(){
     int sum = number1 + number2;
     int sub = number1 - number2;
     int mult = number1 * number2;
-    int div = number1 / number2;
+    int div = (float)number1 / (float)number2;
 
     std::cout << "Soma: " << sum << "\n";
     std::cout << "Subtração: " << sub << "\n";
