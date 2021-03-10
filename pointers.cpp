@@ -3,30 +3,38 @@
 
 using namespace std; 
 
-int anotherInt;
-
-// Declarando variáveis forma estática
-int alpha;
-int *intPointer;
-
-// Declarando variaveis forma Dinâmica
-int *intPointer2;
-
 //Ponteiro com valor 0 (zero) utilizaremos constante NULL
 bool *truth = NULL;
 float *money = NULL;
 
 
 int main(){
+
+    int anotherInt;
+   
+
     // Inicializando ponteiro estático
+    int alpha;
+    
+    // Declarando variáveis forma estática
+    int *intPointer;
+
+    // atribuindo ponteiro para a variavel
     intPointer = &alpha;
+    
+
+
+    // Declarando variaveis forma Dinâmica
+    int *intPointer2;
 
     // Inicializando ponteiro dinâmico
     intPointer2 = new int;
-    
+    cout << intPointer2 << endl;
+
     // Alterando conteudo do ponteiro
     *intPointer2 = 25;
-
+    cout << *intPointer2 << endl;
+    
     // Obtendo conteúdo do ponteiro
     anotherInt = *intPointer2;
 
