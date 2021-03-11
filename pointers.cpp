@@ -14,22 +14,25 @@ int main(){
    
 
     // Inicializando ponteiro estático
-    int alpha;
+    int alpha = 150;
     
     // Declarando variáveis forma estática
     int *intPointer;
 
     // atribuindo ponteiro para a variavel
     intPointer = &alpha;
+    // *intPointer = 25;
     
+    cout << alpha << ", " << *intPointer<< endl;
+    cout << "Valor de alpha: " << alpha << endl ;
 
 
     // Declarando variaveis forma Dinâmica
     int *intPointer2;
-
-    // Inicializando ponteiro dinâmico
+    
+        // Inicializando ponteiro dinâmico
     intPointer2 = new int;
-    cout << intPointer2 << endl;
+    cout << "IntPointer2 dinamico: "<< intPointer2 << endl;
 
     // Alterando conteudo do ponteiro
     *intPointer2 = 25;
